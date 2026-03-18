@@ -1,0 +1,16 @@
+<h2>Buscar Películas</h2>
+
+<form [formGroup]="form">
+  <mat-form-field appearance="outline">
+    <mat-label>Título</mat-label>
+    <input formControlName="titulo" matInput />
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Género</mat-label>
+      <mat-select formControlName="generoID">
+        <mat-option [value]="'1'">Drama</mat-option>
+        <mat-option [value]="'2'">Comedia</mat-option>
+      </mat-select>   
+    </mat-form-field>
+</form>
