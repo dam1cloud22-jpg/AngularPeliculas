@@ -13,7 +13,7 @@ import { CrearPeliculaComponent } from './peliculas/crear-pelicula/crear-pelicul
 import { EditarActorComponent } from './actores/editar-actor/editar-actor.component';
 import { EditarCineComponent } from './cines/editar-cine/editar-cine.component';
 import { EditarPeliculaComponent } from './peliculas/editar-pelicula/editar-pelicula.component';
-import { EditarGeneroComponent } from './generos/editar-genero/editar-genero.component';
+import { EditarGeneros } from './generos/editar-genero/editar-genero.component';
 
 const routes: Routes = [
   {path: '', component: LandindPageComponent},
