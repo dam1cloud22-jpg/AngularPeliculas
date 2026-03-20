@@ -1,0 +1,108 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Practicas\\source\\AngularPeliculas\\back-end\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{510B0029-D7CE-4A5B-AC74-2F1786C30D7D}|back-end\\back-end.csproj|c:\\users\\practicas\\source\\angularpeliculas\\back-end\\back-end\\filtros\\filtrodeexcepcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{510B0029-D7CE-4A5B-AC74-2F1786C30D7D}|back-end\\back-end.csproj|solutionrelative:back-end\\filtros\\filtrodeexcepcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{510B0029-D7CE-4A5B-AC74-2F1786C30D7D}|back-end\\back-end.csproj|c:\\users\\practicas\\source\\angularpeliculas\\back-end\\back-end\\controllers\\generoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{510B0029-D7CE-4A5B-AC74-2F1786C30D7D}|back-end\\back-end.csproj|solutionrelative:back-end\\controllers\\generoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{510B0029-D7CE-4A5B-AC74-2F1786C30D7D}|back-end\\back-end.csproj|c:\\users\\practicas\\source\\angularpeliculas\\back-end\\back-end\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{510B0029-D7CE-4A5B-AC74-2F1786C30D7D}|back-end\\back-end.csproj|solutionrelative:back-end\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{510B0029-D7CE-4A5B-AC74-2F1786C30D7D}|back-end\\back-end.csproj|c:\\users\\practicas\\source\\angularpeliculas\\back-end\\back-end\\filtros\\mifiltrodeaccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{510B0029-D7CE-4A5B-AC74-2F1786C30D7D}|back-end\\back-end.csproj|solutionrelative:back-end\\filtros\\mifiltrodeaccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{510B0029-D7CE-4A5B-AC74-2F1786C30D7D}|back-end\\back-end.csproj|c:\\users\\practicas\\source\\angularpeliculas\\back-end\\back-end\\back-end.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{510B0029-D7CE-4A5B-AC74-2F1786C30D7D}|back-end\\back-end.csproj|solutionrelative:back-end\\back-end.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FiltroDeExcepcion.cs",
+              "DocumentMoniker": "C:\\Users\\Practicas\\source\\AngularPeliculas\\back-end\\back-end\\Filtros\\FiltroDeExcepcion.cs",
+              "RelativeDocumentMoniker": "back-end\\Filtros\\FiltroDeExcepcion.cs",
+              "ToolTip": "C:\\Users\\Practicas\\source\\AngularPeliculas\\back-end\\back-end\\Filtros\\FiltroDeExcepcion.cs",
+              "RelativeToolTip": "back-end\\Filtros\\FiltroDeExcepcion.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T10:49:11.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MiFiltroDeAccion.cs",
+              "DocumentMoniker": "C:\\Users\\Practicas\\source\\AngularPeliculas\\back-end\\back-end\\Filtros\\MiFiltroDeAccion.cs",
+              "RelativeDocumentMoniker": "back-end\\Filtros\\MiFiltroDeAccion.cs",
+              "ToolTip": "C:\\Users\\Practicas\\source\\AngularPeliculas\\back-end\\back-end\\Filtros\\MiFiltroDeAccion.cs",
+              "RelativeToolTip": "back-end\\Filtros\\MiFiltroDeAccion.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBUAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T10:40:27.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "back-end",
+              "DocumentMoniker": "C:\\Users\\Practicas\\source\\AngularPeliculas\\back-end\\back-end\\back-end.csproj",
+              "RelativeDocumentMoniker": "back-end\\back-end.csproj",
+              "ToolTip": "C:\\Users\\Practicas\\source\\AngularPeliculas\\back-end\\back-end\\back-end.csproj",
+              "RelativeToolTip": "back-end\\back-end.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-20T10:28:48.419Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GenerosController.cs",
+              "DocumentMoniker": "C:\\Users\\Practicas\\source\\AngularPeliculas\\back-end\\back-end\\Controllers\\GenerosController.cs",
+              "RelativeDocumentMoniker": "back-end\\Controllers\\GenerosController.cs",
+              "ToolTip": "C:\\Users\\Practicas\\source\\AngularPeliculas\\back-end\\back-end\\Controllers\\GenerosController.cs",
+              "RelativeToolTip": "back-end\\Controllers\\GenerosController.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAgwEUAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T10:11:01.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\Practicas\\source\\AngularPeliculas\\back-end\\back-end\\Startup.cs",
+              "RelativeDocumentMoniker": "back-end\\Startup.cs",
+              "ToolTip": "C:\\Users\\Practicas\\source\\AngularPeliculas\\back-end\\back-end\\Startup.cs",
+              "RelativeToolTip": "back-end\\Startup.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwCkAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T15:31:18.789Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

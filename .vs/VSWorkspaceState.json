@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\back-end",
+    "\\back-end\\bin",
+    "\\back-end\\bin\\Release",
+    "\\back-end\\bin\\Release\\net9.0",
+    "\\back-end\\obj\\Debug",
+    "\\back-end\\obj\\Debug\\net9.0\\refint",
+    "\\back-end\\obj\\Release",
+    "\\back-end\\obj\\Release\\net9.0",
+    "\\back-end\\obj\\Release\\net9.0\\ref"
+  ],
+  "SelectedNode": "\\back-end\\Program.cs",
+  "PreviewInSolutionExplorer": false
+}
