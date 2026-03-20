@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { primeraLetraMayuscula } from 'src/app/utilidades/validadores/PrimeraLetraMayuscula';
 import { generoCreacionDTO } from '../genero';
 import { GenerosService } from '../generos.service';
+import { parsearErroresAPI } from 'src/app/utilidades/utilidades';
 
 
 @Component({
@@ -13,13 +14,17 @@ import { GenerosService } from '../generos.service';
 })
 export class CrearGeneroComponent {
 
+errores: string[] = [];
+
   constructor(private router: Router, private generoService: GenerosService) { }
 
   guardarCambios(genero: generoCreacionDTO){
-    this.generoService.crear(genero).subscribe(()=>{
+    this.generoService.crear(genero).subscribe(
+      ()=>{
        this.router.navigate(['/generos']);
-    }, error => console.error(error))
-  }
+    }, 
+    (error) => this.errores = parsearErroresAPI(error)
+  );}
 
 }
   

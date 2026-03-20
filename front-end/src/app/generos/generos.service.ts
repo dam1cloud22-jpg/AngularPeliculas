@@ -13,8 +13,8 @@ export class GenerosService {
 
   private apiUrl = environment.apiUrl + 'generos';
 
-  public obtenerTodos(): Observable<generoDTO[]>{
-    return this.http.get<generoDTO[]>(this.apiUrl);
+  public obtenerTodos(): Observable<any>{
+    return this.http.get<generoDTO[]>(this.apiUrl, {observe: 'response'});
 }
 
 public crear(genero: generoCreacionDTO){

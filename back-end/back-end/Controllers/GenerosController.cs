@@ -1,13 +1,17 @@
-﻿using back_end.Entidades;
+﻿using AutoMapper;
+using back_end.DTOs;
+using back_end.Entidades;
 using back_end.Filtros;
-using back_end.Repositorios;
+using back_end.Utilidades;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace back_end.Controllers
@@ -18,79 +22,59 @@ namespace back_end.Controllers
     public class GenerosController : ControllerBase
     {
 
-        private readonly IRepositorio repositorio;
-        // 1. Creamos la variable privada
-        private readonly WeatherForecastController weatherForecastController;
+      
 
         private readonly ILogger logger;
+        private readonly ApplicationDbContext context;
+        private readonly IMapper mapper;
 
-        // 2. Lo pedimos en el constructor
-        public GenerosController(IRepositorio repositorio,
-            WeatherForecastController weatherForecastController,
-            ILogger<GenerosController> logger)
+        public GenerosController(
+            ILogger<GenerosController> logger,
+            ApplicationDbContext context, IMapper mapper
+            )
         {
-            this.repositorio = repositorio;
-            // 3. Lo guardamos en nuestra variable
-            this.weatherForecastController = weatherForecastController;
             this.logger = logger;
+            this.context = context;
+            this.mapper = mapper;
         }
 
         [HttpGet]
-        [HttpGet("listado")]
-        [HttpGet("/listadoGeneros")]
-        //[ResponseCache (Duration =60)]
-        [ServiceFilter(typeof(MiFiltroDeAccion))]
 
-
-        public ActionResult<List<Genero>> Get()
+        public async Task<ActionResult<List<GeneroDTO>>> Get([FromQuery] PaginacionDTO paginacionDTO)
         {
-            logger.LogInformation("Vamos a mostrar los generos");
-            return repositorio.ObtenerTodosLosGeneros();
+            var queryable = context.Generos.AsQueryable();
+            await HttpContext.InsertarParametrosPaginacionEnCabecera(queryable);
+            var generos = await queryable.OrderBy(x => x.Nombre).Paginar(paginacionDTO).ToListAsync();
+            return mapper.Map<List<GeneroDTO>>(generos);
         }
 
-        [HttpGet("guid")]//api/generos/guid
-        public ActionResult<Guid> GetGUID()
-        {
-            return Ok(new
-            {
-                GUID_GenerosController = repositorio.ObtenerGUID(),
-                GUID_WeatherForecastController = weatherForecastController.ObtenerGUIDWeatherForecastController()
-            });
-        }
+        
 
         [HttpGet("{Id:int}")]
-        public async Task<ActionResult<Genero>> Get(int Id, [FromHeader] string nombre)
+        public async Task<ActionResult<Genero>> Get(int Id)
         {
-
-            logger.LogDebug($"Obteniendo un género por el id {Id}");
-            var genero = await repositorio.ObtenerPorId(Id);
-
-            if (genero == null)
-            {
-                throw new ApplicationException($"El genero de ID {Id} no fue encontrado");
-                logger.LogWarning($"No podimos encontrar el género de id {Id}");
-                return NotFound();
-            }
-            return genero;
+            throw new NotImplementedException();
         }
 
         [HttpPost]
-        public ActionResult Post([FromBody] Genero genero)
+        public async Task<ActionResult> Post([FromBody] GeneroCreacionDTO generoCreacionDTO)
         {
-            repositorio.CrearGenero(genero);
+            var genero = mapper.Map<Genero>(generoCreacionDTO);
+            context.Add(genero);
+            await context.SaveChangesAsync();
             return NoContent();
         }
 
         [HttpPut]
         public ActionResult Put([FromBody] Genero genero)
         {
-            return NoContent();
+            throw new NotImplementedException();
         }
 
         [HttpDelete]
         public ActionResult Delete()
         {
-            return NoContent();
+            throw new NotImplementedException();
         }
 
     }

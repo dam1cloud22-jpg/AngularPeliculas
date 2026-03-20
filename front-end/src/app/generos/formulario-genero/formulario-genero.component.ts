@@ -15,6 +15,10 @@ export class FormularioGeneroComponent implements OnInit {
   form: FormGroup;
   
   @Input()
+  errores: string[] = [];
+
+
+  @Input()
   modelo: generoCreacionDTO;
 
 
@@ -24,7 +28,7 @@ export class FormularioGeneroComponent implements OnInit {
   ngOnInit(): void {
     this.form = this.formBuilder.group({
       nombre: ['', {
-        validators: [Validators.required, Validators.minLength(3)]
+        validators: [Validators.required, Validators.minLength(3), primeraLetraMayuscula()]
       }]
     });
 

@@ -1,12 +1,12 @@
 using back_end.Controllers; // <--- Aquí está, ¡perfecto!
 using back_end.Filtros;
-using back_end.Repositorios;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -31,11 +31,23 @@ namespace back_end
 
         public void ConfigureServices(IServiceCollection services)
         {
+
+            services.AddAutoMapper(typeof(Startup));
+            services.AddDbContext<ApplicationDbContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("defaultConnection")));
+
+            services.AddCors(options =>
+            {
+                var frontendURL = Configuration.GetValue<string>("frontend_url");
+                options.AddDefaultPolicy(builder =>
+                {
+                    builder.WithOrigins(frontendURL).AllowAnyMethod().AllowAnyHeader()
+                    .WithExposedHeaders(new string[] { "cantidadTotalRegistros" });
+                });
+            });
+
+
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer();
-            services.AddResponseCaching();
-            services.AddScoped<IRepositorio, RepositorioEnMemoria>();
-            services.AddScoped<WeatherForecastController>(); // <--- Registrado correctamente
-            services.AddTransient<MiFiltroDeAccion>();
             services.AddControllers(options =>
             {
                 options.Filters.Add(typeof(FiltroDeExcepcion));
@@ -46,40 +58,10 @@ namespace back_end
             });
         }
 
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILogger<Startup> logger)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            app.Use(async (context, next) =>
-            {
-                using (var swapStream = new MemoryStream())
-                {
-                    var respuestaOriginal = context.Response.Body;
-                    context.Response.Body = swapStream;
-
-                    await next.Invoke();
-
-                    swapStream.Seek(0, SeekOrigin.Begin);
-                    string respuesta = new StreamReader(swapStream).ReadToEnd();
-                    swapStream.Seek(0, SeekOrigin.Begin);
-
-                    await swapStream.CopyToAsync(respuestaOriginal);
-                    context.Response.Body = respuestaOriginal;
-
-                    logger.LogInformation(respuesta);
-                }
-            });
-        
-
-
-        app.Map("/mapa1", (app) =>
-            {
-                app.Run(async context =>
-                {
-                    await context.Response.WriteAsync("Estoy interceptando el pipeline");
-                });
-            });
-
-
-            if (env.IsDevelopment())
+            
+              if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
@@ -88,7 +70,7 @@ namespace back_end
 
             app.UseHttpsRedirection();
             app.UseRouting();
-            app.UseResponseCaching();
+            app.UseCors();
             app.UseAuthentication();
             app.UseAuthorization();
             app.UseEndpoints(endpoints =>
