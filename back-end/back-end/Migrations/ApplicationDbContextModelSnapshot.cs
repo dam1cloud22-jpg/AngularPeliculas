@@ -45,6 +45,23 @@ namespace back_end.Migrations
                     b.ToTable("Actores");
                 });
 
+            modelBuilder.Entity("back_end.Entidades.Cine", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasMaxLength(75)
+                        .HasColumnType("nvarchar(75)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Cines");
+                });
+
             modelBuilder.Entity("back_end.Entidades.Genero", b =>
                 {
                     b.Property<int>("Id")

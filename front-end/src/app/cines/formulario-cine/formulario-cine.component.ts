@@ -11,6 +11,10 @@ export class FormularioCineComponent implements OnInit {
 
   constructor(private formBuilder: FormBuilder) { }
   form: FormGroup
+
+  @Input()
+  errores: string[] = []
+
   @Input()
   modelo: cineCreacionDTO
 

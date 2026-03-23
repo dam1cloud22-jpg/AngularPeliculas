@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { actorCreacionDTO, actorDTO } from '../actor';
+import { ActoresService } from '../actores.service';
+import { parsearErroresAPI } from 'src/app/utilidades/utilidades';
 
 @Component({
   selector: 'app-editar-actor',
@@ -9,16 +11,27 @@ import { actorCreacionDTO, actorDTO } from '../actor';
 })
 export class EditarActorComponent implements OnInit {
 
-  constructor(private activatedRoute: ActivatedRoute) { }
-  modelo: actorDTO = {nombre: 'Felipe', fechaNacimiento: new Date(), foto: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRc8BtQfo7DYe9gLoiXmFYOE9JfIum5cpwrg&s'}
+  constructor(private router: Router,
+       private actoresService: ActoresService,
+      private activatedRoute: ActivatedRoute) { }
+  
+    modelo: actorDTO;
+    errores: string[] = []
+  
   ngOnInit(): void {
-    this.activatedRoute.params.subscribe(params => {
-      // alert(params.id);a
-    })
+    this.activatedRoute.params.subscribe((params) => {
+      this.actoresService.obternerPorId(params.id)
+      .subscribe(genero => {
+        this.modelo = genero;
+      }, () => this.router.navigate(['/generos']))
+    });
   }
-
-  guardarCambios(actor: actorCreacionDTO){
-    console.log(actor);
-
+  
+    guardarCambios(actor: actorCreacionDTO) {
+    this.actoresService.editar(this.modelo.id, actor)
+    .subscribe(() => {
+      this.router.navigate(['/actores']);
+    }, error => this.errores = parsearErroresAPI(error))
   }
+  
 }

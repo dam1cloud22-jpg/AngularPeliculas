@@ -24,6 +24,8 @@ export class FormularioActoresComponent implements OnInit {
   ONsumbit: EventEmitter<actorCreacionDTO> = new EventEmitter<actorCreacionDTO>(); 
 
 
+  imagenCambiada = false;
+
   ngOnInit(): void {
     this.form = this.formBuilder.group({
       nombre: ['',
@@ -42,6 +44,7 @@ export class FormularioActoresComponent implements OnInit {
 
 
   archivoSeleccionado(file){
+    this.imagenCambiada = true;
     this.form.get('foto').setValue(file);
   }
 
@@ -50,6 +53,10 @@ export class FormularioActoresComponent implements OnInit {
   }
 
   OnSubmit(){
+  if (!this.imagenCambiada){
+    this.form.patchValue({'foto': null});
+  }
+
     this.ONsumbit.emit(this.form.value);
   }
 }
