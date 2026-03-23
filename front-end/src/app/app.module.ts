@@ -8,7 +8,9 @@ import { ListadoPeliculasComponent } from './peliculas/listado-peliculas/listado
 import { ListadoGenericoComponent } from './utilidades/listado-generico/listado-generico.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {ReactiveFormsModule, FormsModule} from '@angular/forms'
-import {MarkdownModule} from 'ngx-markdown'
+import {MarkdownModule} from 'ngx-markdown';
+import {SweetAlert2Module} from '@sweetalert2/ngx-sweetalert2'
+
 
 
 import {MaterialModule} from './material/material.module';
@@ -76,7 +78,9 @@ import { MostrarErroresComponent } from './utilidades/mostrar-errores/mostrar-er
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
-    MarkdownModule.forRoot()
+    MarkdownModule.forRoot(),
+    SweetAlert2Module.forRoot()
+
 
   ],
   providers: [],

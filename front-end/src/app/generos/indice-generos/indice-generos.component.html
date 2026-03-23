@@ -20,7 +20,11 @@
             Editar
           </a>
 
-          <button mat-flat-button color="warn">Borrar</button>
+         <button mat-flat-button color="warn"
+          [swal]="{title: 'Confirmación',
+          text: '¿Está seguro que desea borrar el registro?',
+          showCancelButton: true}"
+(confirm)="borrar(element.id)">Borrar</button>
         </td>
 
 
@@ -33,7 +37,9 @@
 
 
     <mat-paginator [pageSizeOptions]="[5, 10, 20, 50]" showFirstLastButtons
-    [length]="cantidadTotalregistros" [pageSize]="cantidadRegistrosAMostrar"> 
+    [length]="cantidadTotalregistros" [pageSize]="cantidadRegistrosAMostrar"
+    (page)="actualizarPaginacion($event)"
+    > 
 
     </mat-paginator>
   </ng-container>

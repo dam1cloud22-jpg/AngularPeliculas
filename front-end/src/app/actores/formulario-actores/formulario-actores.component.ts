@@ -17,6 +17,8 @@ export class FormularioActoresComponent implements OnInit {
   @Input()
   modelo: actorDTO;
 
+  @Input()
+  errores: string[] = []
 
   @Output()
   ONsumbit: EventEmitter<actorCreacionDTO> = new EventEmitter<actorCreacionDTO>(); 

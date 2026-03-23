@@ -46,4 +46,11 @@ testem.log
 Thumbs.db
 
 
+# .NET Core
+bin/
+obj/
+.vs/
+*.user
+*.suo
+
 .vs/

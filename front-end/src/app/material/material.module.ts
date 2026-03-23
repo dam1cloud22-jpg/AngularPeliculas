@@ -13,7 +13,8 @@ import {MatNativeDateModule} from '@angular/material/core';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {MatTableModule} from '@angular/material/table';
-import {MatPaginatorModule} from '@angular/material/paginator'
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatProgressSpinnerModule } from '@angular/material/progress-spinner'
 
 
 
@@ -33,7 +34,8 @@ import {MatPaginatorModule} from '@angular/material/paginator'
     MatTabsModule,
     MatAutocompleteModule,
     MatTableModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatProgressSpinnerModule
 
   ],
   imports: [
