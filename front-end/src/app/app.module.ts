@@ -9,7 +9,9 @@ import { ListadoGenericoComponent } from './utilidades/listado-generico/listado-
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {ReactiveFormsModule, FormsModule} from '@angular/forms'
 import {MarkdownModule} from 'ngx-markdown';
-import {SweetAlert2Module} from '@sweetalert2/ngx-sweetalert2'
+import {SweetAlert2Module} from '@sweetalert2/ngx-sweetalert2';
+import { DragDropModule } from '@angular/cdk/drag-drop';
+
 
 
 
@@ -38,6 +40,7 @@ import { FormularioPeliculaComponent } from './peliculas/formulario-pelicula/for
 import { SelectorMultipleComponent } from './utilidades/selector-multiple/selector-multiple.component';
 import { AutocompleteActoresComponent } from './actores/autocomplete-actores/autocomplete-actores.component';
 import { MostrarErroresComponent } from './utilidades/mostrar-errores/mostrar-errores.component';
+import { DetallePeliculaComponent } from './peliculas/detalle-pelicula/detalle-pelicula.component';
 
 
 @NgModule({
@@ -68,7 +71,8 @@ import { MostrarErroresComponent } from './utilidades/mostrar-errores/mostrar-er
     FormularioPeliculaComponent,
     SelectorMultipleComponent,
     AutocompleteActoresComponent,
-    MostrarErroresComponent
+    MostrarErroresComponent,
+    DetallePeliculaComponent
   ],
   imports: [
     BrowserModule,
@@ -79,7 +83,8 @@ import { MostrarErroresComponent } from './utilidades/mostrar-errores/mostrar-er
     FormsModule,
     HttpClientModule,
     MarkdownModule.forRoot(),
-    SweetAlert2Module.forRoot()
+    SweetAlert2Module.forRoot(),
+    DragDropModule
 
 
   ],

@@ -1,7 +1,11 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, Input, OnInit, ViewChild } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { MatAutocompleteSelectedEvent } from '@angular/material/autocomplete';
 import { MatTable } from '@angular/material/table';
+import { actorPeliculaDTO } from '../actor';
+import { ActoresService } from '../actores.service';
+// 1. IMPORTAMOS LAS HERRAMIENTAS DE ARRASTRAR Y SOLTAR
+import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop'; 
 
 @Component({
   selector: 'app-autocomplete-actores',
@@ -10,21 +14,14 @@ import { MatTable } from '@angular/material/table';
 })
 export class AutocompleteActoresComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private actoresService: ActoresService) { }
 
   control: FormControl = new FormControl();
-  actores = [
-    {nombre: 'Tom Holland', personaje:'', foto: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRc8BtQfo7DYe9gLoiXmFYOE9JfIum5cpwrg&s'},
-    {nombre: 'Tom Hanks',  personaje:'', foto: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUaFiHDyZl4ycl99h44EmE6VmaEwKkh5qhEA&s'},
-    {nombre: 'Samuel L. Jackson',  personaje:'', foto: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu3fds18q93LqvkArnwDm6CAKcTEhG3WVRfg&s'},
 
+  @Input()
+  actoresSeleccionados: actorPeliculaDTO[] = [];
 
-  ]
-
-  actoresOriginal = this.actores;
-
-  actoresSeleccionados = [];
+  actoresAMostrar: actorPeliculaDTO[] = [];
 
   columnasAMostrar = ['imagen', 'nombre', 'personaje', 'acciones'];
 
@@ -32,11 +29,15 @@ export class AutocompleteActoresComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.control.valueChanges.subscribe(valor => {
-      this.actores = this.actoresOriginal;
-      this.actores = this.actores.filter(actor => actor.nombre.indexOf(valor) !== -1);
+    this.control.valueChanges.subscribe(nombre => {
+      if (typeof nombre === 'string' && nombre) {
+        this.actoresService.obtenerPorNombre(nombre).subscribe(actores => {
+          this.actoresAMostrar = actores;
+        });
+      }
+      
     });
-}
+  }
 
   optionSelected(event: MatAutocompleteSelectedEvent){
     console.log(event.option.value);
@@ -51,6 +52,15 @@ export class AutocompleteActoresComponent implements OnInit {
   eliminar(actor){
     const indice = this.actoresSeleccionados.findIndex(a => a.nombre === actor.nombre);
     this.actoresSeleccionados.splice(indice, 1);
+    this.table.renderRows();
+  }
+
+
+  finalizaArrastre(event: CdkDragDrop<any[]>) {
+    const indicePrevio = this.actoresSeleccionados.findIndex(
+      actor => actor === event.item.data
+    );
+    moveItemInArray(this.actoresSeleccionados, indicePrevio, event.currentIndex);
     this.table.renderRows();
   }
 

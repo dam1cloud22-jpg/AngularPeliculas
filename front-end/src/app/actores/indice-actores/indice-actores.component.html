@@ -38,6 +38,7 @@
 
 
     <mat-paginator [pageSizeOptions]="[5, 10, 20, 50]" showFirstLastButtons
+    class="mat-elevation-z8"
     [length]="cantidadTotalregistros" [pageSize]="cantidadRegistrosAMostrar"
     (page)="actualizarPaginacion($event)"
     > 
