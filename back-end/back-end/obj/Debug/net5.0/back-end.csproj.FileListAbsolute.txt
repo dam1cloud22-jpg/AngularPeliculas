@@ -70,3 +70,4 @@ C:\Users\Practicas\source\AngularPeliculas\back-end\back-end\bin\Debug\net5.0\Mi
 C:\Users\Practicas\source\AngularPeliculas\back-end\back-end\bin\Debug\net5.0\NetTopologySuite.dll
 C:\Users\Practicas\source\AngularPeliculas\back-end\back-end\bin\Debug\net5.0\NetTopologySuite.IO.SqlServerBytes.dll
 C:\Users\Practicas\source\AngularPeliculas\back-end\back-end\obj\Debug\net5.0\EFCoreSqlServerNetTopologySuite.cs
+C:\Users\Practicas\source\AngularPeliculas\back-end\back-end\bin\Debug\net5.0\Newtonsoft.Json.dll

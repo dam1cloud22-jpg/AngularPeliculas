@@ -53,14 +53,14 @@ namespace back_end.Controllers
         [HttpGet("{Id:int}")]
         public async Task<ActionResult<GeneroDTO>> Get(int Id)
         {
-           var genero = await context.Generos.FirstOrDefaultAsync(x => x.Id == Id);
+           var cine = await context.Generos.FirstOrDefaultAsync(x => x.Id == Id);
 
-            if (genero == null)
+            if (cine == null)
             {
                 return NotFound();
             }
 
-            return mapper.Map<GeneroDTO>(genero);
+            return mapper.Map<GeneroDTO>(cine);
         }
 
         [HttpPost]

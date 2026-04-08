@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Drawing;
 
 namespace back_end.Entidades
@@ -9,6 +10,7 @@ namespace back_end.Entidades
         [Required]
         [StringLength(maximumLength:75)]
         public string Nombre { get; set; }
+        public List<PeliculasCines> PeliculasCines { get; set; }
 
     }
 }

@@ -7,36 +7,20 @@
       "RelativeMoniker": "D:0:0:{510B0029-D7CE-4A5B-AC74-2F1786C30D7D}|back-end\\back-end.csproj|solutionrelative:back-end\\utilidades\\automapperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{510B0029-D7CE-4A5B-AC74-2F1786C30D7D}|back-end\\back-end.csproj|c:\\users\\practicas\\source\\angularpeliculas\\back-end\\back-end\\entidades\\cine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{510B0029-D7CE-4A5B-AC74-2F1786C30D7D}|back-end\\back-end.csproj|solutionrelative:back-end\\entidades\\cine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{510B0029-D7CE-4A5B-AC74-2F1786C30D7D}|back-end\\back-end.csproj|c:\\users\\practicas\\source\\angularpeliculas\\back-end\\back-end\\controllers\\peliculascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{510B0029-D7CE-4A5B-AC74-2F1786C30D7D}|back-end\\back-end.csproj|solutionrelative:back-end\\controllers\\peliculascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{510B0029-D7CE-4A5B-AC74-2F1786C30D7D}|back-end\\back-end.csproj|c:\\users\\practicas\\source\\angularpeliculas\\back-end\\back-end\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{510B0029-D7CE-4A5B-AC74-2F1786C30D7D}|back-end\\back-end.csproj|solutionrelative:back-end\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{510B0029-D7CE-4A5B-AC74-2F1786C30D7D}|back-end\\back-end.csproj|c:\\users\\practicas\\source\\angularpeliculas\\back-end\\back-end\\dtos\\peliculaactordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{510B0029-D7CE-4A5B-AC74-2F1786C30D7D}|back-end\\back-end.csproj|solutionrelative:back-end\\dtos\\peliculaactordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{510B0029-D7CE-4A5B-AC74-2F1786C30D7D}|back-end\\back-end.csproj|c:\\users\\practicas\\source\\angularpeliculas\\back-end\\back-end\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{510B0029-D7CE-4A5B-AC74-2F1786C30D7D}|back-end\\back-end.csproj|solutionrelative:back-end\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{510B0029-D7CE-4A5B-AC74-2F1786C30D7D}|back-end\\back-end.csproj|c:\\users\\practicas\\source\\angularpeliculas\\back-end\\back-end\\dtos\\peliculadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{510B0029-D7CE-4A5B-AC74-2F1786C30D7D}|back-end\\back-end.csproj|solutionrelative:back-end\\dtos\\peliculadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{510B0029-D7CE-4A5B-AC74-2F1786C30D7D}|back-end\\back-end.csproj|c:\\users\\practicas\\source\\angularpeliculas\\back-end\\back-end\\migrations\\20260323165518_cines.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{510B0029-D7CE-4A5B-AC74-2F1786C30D7D}|back-end\\back-end.csproj|solutionrelative:back-end\\migrations\\20260323165518_cines.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{510B0029-D7CE-4A5B-AC74-2F1786C30D7D}|back-end\\back-end.csproj|c:\\users\\practicas\\source\\angularpeliculas\\back-end\\back-end\\controllers\\cinescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{510B0029-D7CE-4A5B-AC74-2F1786C30D7D}|back-end\\back-end.csproj|solutionrelative:back-end\\controllers\\cinescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{510B0029-D7CE-4A5B-AC74-2F1786C30D7D}|back-end\\back-end.csproj|c:\\users\\practicas\\source\\angularpeliculas\\back-end\\back-end\\dtos\\cinecreaciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{510B0029-D7CE-4A5B-AC74-2F1786C30D7D}|back-end\\back-end.csproj|solutionrelative:back-end\\dtos\\cinecreaciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{510B0029-D7CE-4A5B-AC74-2F1786C30D7D}|back-end\\back-end.csproj|c:\\users\\practicas\\source\\angularpeliculas\\back-end\\back-end\\controllers\\actorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{510B0029-D7CE-4A5B-AC74-2F1786C30D7D}|back-end\\back-end.csproj|solutionrelative:back-end\\controllers\\actorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{510B0029-D7CE-4A5B-AC74-2F1786C30D7D}|back-end\\back-end.csproj|c:\\users\\practicas\\source\\angularpeliculas\\back-end\\back-end\\dtos\\actordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{510B0029-D7CE-4A5B-AC74-2F1786C30D7D}|back-end\\back-end.csproj|solutionrelative:back-end\\dtos\\actordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{510B0029-D7CE-4A5B-AC74-2F1786C30D7D}|back-end\\back-end.csproj|c:\\users\\practicas\\source\\angularpeliculas\\back-end\\back-end\\entidades\\pelicula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{510B0029-D7CE-4A5B-AC74-2F1786C30D7D}|back-end\\back-end.csproj|solutionrelative:back-end\\entidades\\pelicula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,12 +30,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -60,113 +40,65 @@
               "RelativeDocumentMoniker": "back-end\\Utilidades\\AutoMapperProfiles.cs",
               "ToolTip": "C:\\Users\\Practicas\\source\\AngularPeliculas\\back-end\\back-end\\Utilidades\\AutoMapperProfiles.cs",
               "RelativeToolTip": "back-end\\Utilidades\\AutoMapperProfiles.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAQwC8AAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-23T17:35:44.136Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CineCreacionDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Practicas\\source\\AngularPeliculas\\back-end\\back-end\\DTOs\\CineCreacionDTO.cs",
-              "RelativeDocumentMoniker": "back-end\\DTOs\\CineCreacionDTO.cs",
-              "ToolTip": "C:\\Users\\Practicas\\source\\AngularPeliculas\\back-end\\back-end\\DTOs\\CineCreacionDTO.cs",
-              "RelativeToolTip": "back-end\\DTOs\\CineCreacionDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-23T17:17:33.313Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CinesController.cs",
-              "DocumentMoniker": "C:\\Users\\Practicas\\source\\AngularPeliculas\\back-end\\back-end\\Controllers\\CinesController.cs",
-              "RelativeDocumentMoniker": "back-end\\Controllers\\CinesController.cs",
-              "ToolTip": "C:\\Users\\Practicas\\source\\AngularPeliculas\\back-end\\back-end\\Controllers\\CinesController.cs",
-              "RelativeToolTip": "back-end\\Controllers\\CinesController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAcwCAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-23T17:15:39.538Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "20260323165518_Cines.cs",
-              "DocumentMoniker": "C:\\Users\\Practicas\\source\\AngularPeliculas\\back-end\\back-end\\Migrations\\20260323165518_Cines.cs",
-              "RelativeDocumentMoniker": "back-end\\Migrations\\20260323165518_Cines.cs",
-              "ToolTip": "C:\\Users\\Practicas\\source\\AngularPeliculas\\back-end\\back-end\\Migrations\\20260323165518_Cines.cs",
-              "RelativeToolTip": "back-end\\Migrations\\20260323165518_Cines.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAiwBEAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-23T16:55:19.227Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Practicas\\source\\AngularPeliculas\\back-end\\back-end\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "back-end\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\Practicas\\source\\AngularPeliculas\\back-end\\back-end\\ApplicationDbContext.cs",
-              "RelativeToolTip": "back-end\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-23T16:48:16.996Z",
+              "WhenOpened": "2026-04-08T12:07:56.405Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Startup.cs",
-              "DocumentMoniker": "C:\\Users\\Practicas\\source\\AngularPeliculas\\back-end\\back-end\\Startup.cs",
-              "RelativeDocumentMoniker": "back-end\\Startup.cs",
-              "ToolTip": "C:\\Users\\Practicas\\source\\AngularPeliculas\\back-end\\back-end\\Startup.cs",
-              "RelativeToolTip": "back-end\\Startup.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAmwFgAAAArAAAAAAAAAA==",
+              "Title": "PeliculaActorDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Practicas\\source\\AngularPeliculas\\back-end\\back-end\\DTOs\\PeliculaActorDTO.cs",
+              "RelativeDocumentMoniker": "back-end\\DTOs\\PeliculaActorDTO.cs",
+              "ToolTip": "C:\\Users\\Practicas\\source\\AngularPeliculas\\back-end\\back-end\\DTOs\\PeliculaActorDTO.cs",
+              "RelativeToolTip": "back-end\\DTOs\\PeliculaActorDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-23T16:44:16.68Z",
+              "WhenOpened": "2026-04-08T12:01:07.032Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Cine.cs",
-              "DocumentMoniker": "C:\\Users\\Practicas\\source\\AngularPeliculas\\back-end\\back-end\\Entidades\\Cine.cs",
-              "RelativeDocumentMoniker": "back-end\\Entidades\\Cine.cs",
-              "ToolTip": "C:\\Users\\Practicas\\source\\AngularPeliculas\\back-end\\back-end\\Entidades\\Cine.cs*",
-              "RelativeToolTip": "back-end\\Entidades\\Cine.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Title": "PeliculasController.cs",
+              "DocumentMoniker": "C:\\Users\\Practicas\\source\\AngularPeliculas\\back-end\\back-end\\Controllers\\PeliculasController.cs",
+              "RelativeDocumentMoniker": "back-end\\Controllers\\PeliculasController.cs",
+              "ToolTip": "C:\\Users\\Practicas\\source\\AngularPeliculas\\back-end\\back-end\\Controllers\\PeliculasController.cs*",
+              "RelativeToolTip": "back-end\\Controllers\\PeliculasController.cs*",
+              "ViewState": "AgIAABsAAAAAAAAAAAAQwCIAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-23T16:38:59.311Z",
+              "WhenOpened": "2026-04-08T11:59:48.247Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ActoresController.cs",
-              "DocumentMoniker": "C:\\Users\\Practicas\\source\\AngularPeliculas\\back-end\\back-end\\Controllers\\ActoresController.cs",
-              "RelativeDocumentMoniker": "back-end\\Controllers\\ActoresController.cs",
-              "ToolTip": "C:\\Users\\Practicas\\source\\AngularPeliculas\\back-end\\back-end\\Controllers\\ActoresController.cs",
-              "RelativeToolTip": "back-end\\Controllers\\ActoresController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF8AAABLAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Pelicula.cs",
+              "DocumentMoniker": "C:\\Users\\Practicas\\source\\AngularPeliculas\\back-end\\back-end\\Entidades\\Pelicula.cs",
+              "RelativeDocumentMoniker": "back-end\\Entidades\\Pelicula.cs",
+              "ToolTip": "C:\\Users\\Practicas\\source\\AngularPeliculas\\back-end\\back-end\\Entidades\\Pelicula.cs",
+              "RelativeToolTip": "back-end\\Entidades\\Pelicula.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-23T12:44:49.852Z",
+              "WhenOpened": "2026-04-08T11:59:12.958Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ActorDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Practicas\\source\\AngularPeliculas\\back-end\\back-end\\DTOs\\ActorDTO.cs",
-              "RelativeDocumentMoniker": "back-end\\DTOs\\ActorDTO.cs",
-              "ToolTip": "C:\\Users\\Practicas\\source\\AngularPeliculas\\back-end\\back-end\\DTOs\\ActorDTO.cs",
-              "RelativeToolTip": "back-end\\DTOs\\ActorDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA1AAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "PeliculaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Practicas\\source\\AngularPeliculas\\back-end\\back-end\\DTOs\\PeliculaDTO.cs",
+              "RelativeDocumentMoniker": "back-end\\DTOs\\PeliculaDTO.cs",
+              "ToolTip": "C:\\Users\\Practicas\\source\\AngularPeliculas\\back-end\\back-end\\DTOs\\PeliculaDTO.cs",
+              "RelativeToolTip": "back-end\\DTOs\\PeliculaDTO.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAxwBEAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-23T12:40:45.699Z",
+              "WhenOpened": "2026-04-08T11:58:59.907Z",
               "EditorCaption": ""
             }
           ]
