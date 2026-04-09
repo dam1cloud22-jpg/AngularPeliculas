@@ -14,7 +14,8 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
-import {MatProgressSpinnerModule } from '@angular/material/progress-spinner'
+import {MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import {MatChipsModule} from '@angular/material/chips'
 
 
 
@@ -35,7 +36,8 @@ import {MatProgressSpinnerModule } from '@angular/material/progress-spinner'
     MatAutocompleteModule,
     MatTableModule,
     MatPaginatorModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatChipsModule
 
   ],
   imports: [

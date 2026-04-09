@@ -25,7 +25,7 @@ export class IndiceGenerosComponent implements OnInit {
 }
 
 cargarRegistros(pagina: number, cantidadElementosAMostrar){
-  this.GenerosService.obtenerTodos(pagina,cantidadElementosAMostrar)
+  this.GenerosService.obtenerPaginado(pagina,cantidadElementosAMostrar)
   .subscribe((respuesta: HttpResponse<generoDTO[]>) => {
     this.generos = respuesta.body;
     console.log(respuesta.headers.get("cantidadTotalRegistros"));

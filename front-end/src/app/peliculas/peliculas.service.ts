@@ -1,7 +1,7 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
-import { PeliculaCreacionDTO, PeliculaDTO, PeliculaPostGet } from './pelicula';
+import { LandingPageDTO, PeliculaCreacionDTO, PeliculaDTO, PeliculaPostGet, PeliculaPutGet } from './pelicula';
 import { Observable } from 'rxjs';
 import { formatearFecha } from '../utilidades/utilidades';
 
@@ -13,6 +13,10 @@ export class PeliculasService {
   constructor(private http: HttpClient) { }
   private apiURL = environment.apiUrl + 'peliculas';
 
+  public obtenerLandingPage(): Observable<LandingPageDTO>{
+    return this.http.get<LandingPageDTO>(this.apiURL);
+  }
+
   public obtenerPorId(id: number): Observable<PeliculaDTO>{
     return this.http.get<PeliculaDTO>(`${this.apiURL}/${id}`);
   }
@@ -21,10 +25,30 @@ export class PeliculasService {
     return this.http.get<PeliculaPostGet>(`${this.apiURL}/postget`);
   }
 
-  public crear(pelicula: PeliculaCreacionDTO){
-    const formData = this.ConstruirFormData(pelicula);
-    return this.http.post(this.apiURL, formData);
+  public putGet(id: number): Observable<PeliculaPutGet>{
+    return this.http.get<PeliculaPutGet>(`${this.apiURL}/putget/${id}`);
   }
+
+  public borrar(id: number) {
+  return this.http.delete(`${this.apiURL}/${id}`);
+}
+
+  public filtrar(valores: any): Observable<any>{
+    const params = new HttpParams({fromObject: valores});
+    return this.http.get<PeliculaDTO[]>(`${this.apiURL}/filtrar`,
+    {params, observe: 'response'});
+  }
+
+  public crear(pelicula: PeliculaCreacionDTO): Observable<number>{
+    const formData = this.ConstruirFormData(pelicula);
+    return this.http.post<number>(this.apiURL, formData);
+  }
+
+   public editar(id: number, pelicula: PeliculaCreacionDTO){
+    const formData = this.ConstruirFormData(pelicula);
+    return this.http.put(`${this.apiURL}/${id}`, formData);
+  }
+
 
   private ConstruirFormData(pelicula: PeliculaCreacionDTO): FormData {
   const formData = new FormData();
@@ -33,8 +57,8 @@ export class PeliculasService {
   formData.append('resumen', pelicula.resumen);
   formData.append('trailer', pelicula.trailer);
   formData.append('enCines', String(pelicula.enCines));
-  if (pelicula.fechaLanzamiento){
-    formData.append('fechaLanzamiento', formatearFecha(pelicula.fechaLanzamiento));
+  if (pelicula.fechaEstreno){
+    formData.append('fechaEstreno', formatearFecha(pelicula.fechaEstreno));
   }
 
   if (pelicula.poster){
